@@ -13,7 +13,8 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-ne
 каталоге пользователя super-{ФИО}
 8. Продемонстрировать работу механизмов разграничения доступа.
 # Шаги выполнения 
-1 Шаг ![image](https://github.com/Archangel15520/toib2/blob/main/10.JPG)
+1 Шаг 
+![image](https://github.com/Archangel15520/toib2/blob/main/10.JPG)
 
 2 Шаг
 
