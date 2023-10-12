@@ -84,7 +84,7 @@ root@debian:/home/grishavm# chown super-{Grisha.V.M}:group-{1234} /home/super-{G
 
 8 Шаг
 
-root@debian:/home/grishavm# su user_david
+root@debian:/home/grishavm# su user_grishavm
 
 user_grishavm@debian:/home/grishavm$ touch /home/super-{Grisha.V.M}/test_file.txt
 
