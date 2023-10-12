@@ -18,13 +18,13 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-ne
 
 2 Шаг
 
-david@debian:~$ su
+grishavm@debian:~$ su
 
 Пароль: 
 
-root@debian:/home/david# sudo useradd super-{AsatryanDR}
+root@debian:/home/grishavm# sudo useradd super-{Grisha.V.M}
 
-root@debian:/home/david# passwd super-{AsatryanDR}
+root@debian:/home/grishavm# passwd super-{Grisha.V.M}
 
 Новый пароль:
 
@@ -32,40 +32,40 @@ root@debian:/home/david# passwd super-{AsatryanDR}
 
 passwd: пароль успешно обновлён
 
-root@debian:/home/david# sudo usermod -aG sudo super-{AsatryanDR}
+root@debian:/home/grishavm# sudo usermod -aG sudo super-{Grisha.V.M}
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/1.JPG)
 
 3 Шаг
 
-root@debian:/home/david# sudo groupadd group-{1234}
+root@debian:/home/grishavm# sudo groupadd group-{1234}
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/2.JPG)
 
 4 Шаг
 
-root@debian:/home/david# sudo usermod -aG group-{1234} super-{AsatryanDR}
+root@debian:/home/grishavm# sudo usermod -aG group-{1234} super-{Grisha.V.M}
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/3.JPG)
 
 5 Шаг
 
-root@debian:/home/david# id super-{AsatryanDR}
+root@debian:/home/grishavm# id super-{Grisha.V.M}
 
-uid=1002(super-{AsatryanDR}) gid=1002(super-{AsatryanDR}) группы=1002(super-{AsatryanDR
-}),27(sudo), 1003(group-{1234})
+uid=1001(super-{Grisha.V.M}) gid=1001(super-{Grisha.V.M}) группы=1001(super-{Grisha.V.M
+}),27(sudo), 1002(group-{1234})
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/4.JPG)
 
 6 Шаг
 
-root@debian:/home/david# sudo adduser user_david
+root@debian:/home/grishavm# sudo adduser user_grishavm
 
-root@debian:/home/david# sudo usermod -aG group-{1234} user_david
+root@debian:/home/grishavm# sudo usermod -aG group-{1234} user_grishavm
 
-root@debian:/home/david# id user_david
+root@debian:/home/grishavm# id user_grishavm
 
-uid=1004(user_david) gid=1004(user_david) группы=1004(user_david),100(users),1003(group
+uid=1003(user_grishavm) gid=1003(user_grishavm) группы=1003(user_grishavm),100(users),1002(group
 -{1234})
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/5.JPG)
@@ -74,29 +74,29 @@ uid=1004(user_david) gid=1004(user_david) группы=1004(user_david),100(user
 
 7 Шаг
 
-root@debian:/home/david# sudo mkdir /home/super-{AsatryanDR}
+root@debian:/home/grishavm# sudo mkdir /home/super-{Grisha.V.M}
 
-root@debian:/home/david# chmod 770 /home/super-{AsatryanDR}
+root@debian:/home/grishavm# chmod 770 /home/super-{Grisha.V.M}
 
-root@debian:/home/david# chown super-{AsatryanDR}:group-{1234} /home/super-{AsatryanDR}
+root@debian:/home/grishavm# chown super-{Grisha.V.M}:group-{1234} /home/super-{Grisha.V.M}
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/7.JPG)
 
 8 Шаг
 
-root@debian:/home/david# su user_david
+root@debian:/home/grishavm# su user_david
 
-user_david@debian:/home/david$ touch /home/super-{AsatryanDR}/test_file.txt
+user_grishavm@debian:/home/grishavm$ touch /home/super-{Grisha.V.M}/test_file.txt
 
-user_david@debian:/home/david$ rm /home/super-{AsatryanDR}/test_file.txt
+user_grishavm@debian:/home/grishavm$ rm /home/super-{Grisha.V.M}/test_file.txt
 
 ![image](https://github.com/Archangel15520/toib2/blob/main/8.JPG)
 
-user_david@debian:/home/david$ cd /home/super-{AsatryanDR}
+user_grishavm@debian:/home/grishavm$ cd /home/super-{Grisha.V.M}
 
-user_david@debian:/home/super-{AsatryanDR}$ touch test_file.txt
+user_grishavm@debian:/home/super-{Grisha.V.M}$ touch test_file.txt
 
-user_david@debian:/home/super-{AsatryanDR}$ ls
+user_grishavm@debian:/home/super-{Grisha.V.M}$ ls
 
 test_file.txt
 
